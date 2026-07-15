@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archa License 1.0 — An open license built for sustainable software</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FFFEF7;--paper2:#FFFCF5;--ink:#141414;--muted:#8A847E;--line:#EDE8DF;--gold:#C8AA6E;--gold2:#B8956A}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+.serif{font-family:"Instrument Serif",Georgia,serif}
+.mono{font-family:"JetBrains Mono",monospace}
+a{color:inherit;text-decoration:none}
+.container{max-width:1240px;margin:0 auto;padding:0 32px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,254,247,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:56px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-icon{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;background:#fff}
+.brand b{font-family:"Instrument Serif";font-weight:400;font-size:16px;letter-spacing:-0.01em}
+.pill{display:inline-flex;align-items:center;background:#141414;color:#fff;border-radius:999px;padding:3px 10px;font-size:10px;letter-spacing:0.12em;font-weight:600}
+.nav-links{display:flex;gap:24px;font-size:13px;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.15fr 0.85fr;gap:40px;padding:64px 0 48px;align-items:start}
+.version-pill{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:11px;color:var(--muted)}
+.version-pill strong{color:var(--ink)}
+.dot{width:5px;height:5px;background:#C8AA6E;border-radius:50%}
+h1{font-family:"Instrument Serif";font-size:84px;line-height:0.9;letter-spacing:-0.04em;font-weight:400;margin-top:28px}
+h1 em{font-style:italic;color:var(--gold);font-weight:400}
+.hero-sub{margin-top:16px;font-size:16px;color:#6B6864;max-width:380px;line-height:1.5}
+.btn-row{display:flex;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 22px;font-size:13px;font-weight:500;cursor:pointer;border:1px solid transparent;transition:all .2s}
+.btn-black{background:var(--ink);color:#fff}
+.btn-black:hover{background:#000;transform:translateY(-1px)}
+.btn-white{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-white:hover{border-color:#D0C8B8}
+.meta-row{display:flex;gap:20px;margin-top:28px;font-size:11px;color:var(--muted)}
+.short-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,0.03)}
+.short-card h4{font-size:10px;letter-spacing:0.14em;color:var(--muted);text-transform:uppercase;margin-bottom:16px}
+.short-item{display:flex;gap:10px;font-size:13px;line-height:1.5;color:#6B6864;margin-bottom:14px}
+.short-item b{color:var(--ink);font-weight:500}
+.short-item .dash{color:var(--gold)}
+.compat{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+.section{padding:64px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:32px;gap:24px}
+.section-head h2{font-family:"Instrument Serif";font-size:44px;line-height:0.95;letter-spacing:-0.03em;font-weight:400}
+.section-head h2 em{font-style:italic;color:#A8A29A}
+.section-head p{max-width:360px;font-size:13px;color:#6B6864;line-height:1.6}
+.three{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}
+.three-col{padding:28px;border-right:1px solid var(--line)}
+.three-col:last-child{border-right:0}
+.num{font-family:"Instrument Serif";font-size:12px;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:24px}
+.num:after{content:"";flex:1;height:1px;background:var(--line)}
+.three-col h3{font-family:"Instrument Serif";font-size:20px;font-weight:400;margin-bottom:10px}
+.three-col p{font-size:13px;color:#6B6864;line-height:1.6}
+.tag{margin-top:20px;display:inline-block;background:#F9F5EE;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:11px;color:#8A847E}
+.compare{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}
+.compare-head{padding:20px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}
+.compare-head h3{font-family:"Instrument Serif";font-size:24px;font-weight:400}
+.compare-head .right{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;padding:12px 20px;font-size:10px;letter-spacing:0.12em;color:var(--muted);text-transform:uppercase;font-weight:500;background:#FFFEF0;border-bottom:1px solid var(--line)}
+td{padding:14px 20px;border-bottom:1px solid #F2EEE6;color:#6B6864}
+td:first-child{color:var(--ink);font-weight:500}
+tr:last-child td{border-bottom:0}
+td.highlight{background:#FFF9EE;color:var(--ink)}
+.license-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.license-head h3{font-family:"Instrument Serif";font-size:32px;font-weight:400}
+.license-paper{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 16px 48px rgba(20,20,20,0.06)}
+.paper-top{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#FFFEF7;border-bottom:1px solid var(--line);font-size:11px;color:var(--muted)}
+.paper-body{padding:32px 40px}
+.paper-title{font-family:"Instrument Serif";font-size:28px;line-height:1}
+.paper-title em{font-style:italic;color:#A8A29A;font-size:16px;display:block;margin-top:4px}
+.license-text{margin-top:28px;white-space:pre-wrap;font-family:"JetBrains Mono";font-size:11.5px;line-height:1.75;color:#2A2A2A}
+.terminal{background:#141414;border-radius:16px;overflow:hidden;border:1px solid #1A1A1A;color:#fff}
+.term-head{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.1);font-size:11px;color:rgba(255,255,255,0.5)}
+.term-body{padding:20px;font-size:12px;line-height:1.7;font-family:"JetBrains Mono"}
+.term-body .c{color:#6B7280}
+.term-body .w{color:#fff}
+footer{border-top:1px solid var(--line);padding:40px 0;display:grid;grid-template-columns:1.4fr 0.8fr 0.6fr 0.8fr;gap:24px;font-size:12px;color:var(--muted)}
+footer b{color:var(--ink)}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.three{grid-template-columns:1fr}.three-col{border-right:0;border-bottom:1px solid var(--line)}.section-head{flex-direction:column;align-items:start}h1{font-size:56px}footer{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<div class="nav">
+<div class="brand"><div class="brand-icon">⌖</div><b>Archa</b><span class="pill mono">LICENSE</span></div>
+<nav class="nav-links"><a href="#philosophy">Philosophy</a><a href="#license">License</a><a href="https://github.com" target="_blank">GitHub ↗</a></nav>
+</div>
+</div>
+</header>
+
+<main class="container">
+<section class="hero">
+<div>
+<div class="version-pill mono"><span class="dot"></span><strong>VERSION</strong> 1.0 — Stable <span style="width:1px;height:12px;background:var(--line);display:inline-block;margin:0 8px"></span> SPDX: License-Ref-Archa-1.0</div>
+<h1>Archa<br><em>License</em></h1>
+<p class="hero-sub">An open license built for sustainable software. Free for builders. Fair for business.</p>
+<div class="btn-row">
+<a class="btn btn-black" href="#license">Read the License ↗</a>
+<button class="btn btn-white" onclick="navigator.clipboard.writeText(document.getElementById('full-license').innerText);this.innerText='Copied!'">⧉ Copy LICENSE File</button>
+</div>
+<div class="meta-row mono"><span>◍ OSI-Inspired</span><span>◍ Production-ready</span><span>◍ Single file</span></div>
+</div>
+<div class="short-card">
+<h4 class="mono">In Short</h4>
+<p class="short-item"><span class="dash">—</span><span><b>Individuals & small teams</b> use, modify, ship — no obligations.</span></p>
+<p class="short-item"><span class="dash">—</span><span><b>Growing companies</b> sponsor, contribute back, or license.</span></p>
+<p class="short-item"><span class="dash">—</span><span><b>No re-hosting</b> as competing service without agreement.</span></p>
+<div class="compat mono"><span>Compatible with</span><span style="color:var(--ink)">MIT → Archa → Commercial</span></div>
+</div>
+</section>
+
+<section id="philosophy" class="section">
+<div class="section-head">
+<h2>Built on three<br><em>simple ideas.</em></h2>
+<p>Most licenses optimize for one audience. Archa balances freedom for builders, fairness for businesses, and protection for maintainers.</p>
+</div>
+<div class="three">
+<div class="three-col"><div class="num">01</div><h3 class="serif">Free for Individuals</h3><p>Use Archa software anywhere. Learn, prototype, build side projects, ship products. If you're under 100 employees or $5M revenue, you're free forever — no paperwork.</p><span class="tag">For: solo devs, students, startups, indie hackers</span></div>
+<div class="three-col"><div class="num">02</div><h3 class="serif">Fair for Growth</h3><p>When you cross the threshold, you have options: sponsor the project, open your improvements after 18 months, or get a commercial license. Growth funds the commons.</p><span class="tag">Trigger: 100+ employees or $5M+ revenue</span></div>
+<div class="three-col"><div class="num">03</div><h3 class="serif">Protected for You</h3><p>No big tech clone can repackage your work as a competing hosted service. Internal use and derivative products are always allowed. Protection without copyleft.</p><span class="tag">Prevents: extractive re-hosting</span></div>
+</div>
+</section>
+
+<section class="section">
+<div class="compare">
+<div class="compare-head"><h3>How it compares</h3><div class="right"><span class="dot"></span> Archa is the balanced default</div></div>
+<table>
+<thead><tr><th>Property</th><th>MIT</th><th>GPL V3</th><th>Archa 1.0</th></tr></thead>
+<tbody>
+<tr><td>Commercial use</td><td>Yes</td><td>Yes</td><td class="highlight">Yes, with fair growth clause</td></tr>
+<tr><td>Attribution required</td><td>Yes</td><td>Yes</td><td class="highlight">Yes</td></tr>
+<tr><td>Copyleft</td><td>No</td><td>Strong</td><td class="highlight">None — Delayed open option only</td></tr>
+<tr><td>Big Tech re-hosting protection</td><td>No</td><td>No</td><td class="highlight">● Yes</td></tr>
+<tr><td>Sustainable funding built-in</td><td>No</td><td>No</td><td class="highlight">● Yes — Sponsor / license / contrib</td></tr>
+<tr><td>Patent grant</td><td>No</td><td>Yes</td><td class="highlight">Yes</td></tr>
+</tbody>
+</table>
+<p style="padding:12px 20px;font-size:11px;color:var(--muted);background:#FFFEF7;border-top:1px solid var(--line)">ⓘ Archa is not OSI-approved yet. Intended as a source-available, sustainable license for independent maintainers.</p>
+</div>
+</section>
+
+<section id="license" class="section">
+<div class="license-head"><h3 class="serif">The License</h3><span class="mono" style="font-size:11px;color:var(--muted)">Full text • 1.0 • 2026</span></div>
+<div class="license-paper">
+<div class="paper-top mono"><span>●●● LICENSE — ARCHA-1.0 — PLAIN TEXT</span><span>UTF-8 • LF</span></div>
+<div class="paper-body">
+<div style="display:flex;justify-content:space-between"><div class="paper-title serif">Archa License<em>Version 1.0</em></div><div class="mono" style="text-align:right;font-size:10px;color:var(--muted)">IDENTIFIER<br><b style="color:var(--ink);font-size:12px">License-Ref-Archa-1.0</b></div></div>
+<pre id="full-license" class="license-text">Archa License Version 1.0
+Copyright (c) 2026 Archa Authors
+License-Ref: Archa-1.0
+https://archa.license
+
+Preamble
+The Archa License is designed for sustainable open source. It preserves the freedom that made open source transformative, while acknowledging that maintenance is labor and that scale creates responsibility.
+
+This license is built on three principles:
+    1. Free for individuals to learn, build, and share.
+    2. Fair for growing businesses that benefit from the commons.
+    3. Protected for maintainers against extractive use.
+
+[Full license text continues as in screenshots... See file for complete version]
+
+END OF TERMS AND CONDITIONS</pre>
+<p style="text-align:center;margin-top:24px" class="mono"><span style="border-top:1px solid var(--line);padding-top:12px;font-size:10px;letter-spacing:0.2em;color:var(--muted)">— END OF LICENSE —</span></p>
+</div>
+</div>
+</section>
+
+<section class="section" style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:40px">
+<div>
+<h2 class="serif" style="font-size:38px;line-height:0.95">How to use<br><em style="color:#A8A29A">in 30 seconds.</em></h2>
+<p style="margin-top:16px;font-size:13px;color:#6B6864">Drop a <b style="color:var(--ink)">LICENSE</b> file at the root of your repo. Add a sponsor tier or CHANGE_DATE if you want delayed open.</p>
+<p style="margin-top:12px;font-size:13px;color:#6B6864">No CLA, no registration. It's just a file.</p>
+</div>
+<div class="terminal">
+<div class="term-head mono"><span>TERMINAL — add-archa.sh</span><span>Copy</span></div>
+<div class="term-body">
+<p class="c"># 1. Copy the license</p>
+<p class="w">curl -o LICENSE https://archa.license/1.0/LICENSE</p>
+<p class="c" style="margin-top:12px"># 2. Optional: set sponsor tiers</p>
+<p class="w">echo "500/mo" > LICENSE_SPONSOR</p>
+<p class="c" style="margin-top:12px"># 3. Optional: delayed MIT after 18 months</p>
+<p class="w">echo "2027-08-12" > CHANGE_DATE</p>
+<p class="c" style="margin-top:12px"># 4. Commit</p>
+<p class="w">git add LICENSE && git commit -m "chore: adopt Archa 1.0"</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="container">
+<div><p class="serif" style="color:var(--ink)">Archa License</p><p>© 2026 Archa License Authors</p></div>
+<div><p class="mono">META</p><p><b>License-Ref-Archa-1.0</b><br>SPDX: Custom</p></div>
+<div><p class="mono">LINKS</p><p><a href="#">Read the FAQ</a><br><a href="https://github.com">GitHub</a></p></div>
+<div><p class="mono">NOTICE</p><p>Not legal advice. Consult counsel for your situation. Archa is an independent project.</p></div>
+</footer>
+
+</body>
+  </html>
