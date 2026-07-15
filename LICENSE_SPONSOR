@@ -1,0 +1,11 @@
+# Archa License - Sponsor Tier Definition
+# This file defines the minimum sponsorship required for Threshold Entities
+# under Archa License 1.0 Section 3.2(ii)
+
+tier: $500/mo
+platform: GitHub Sponsors
+url: https://github.com/sponsors/newssungoldentoday-dev
+contact: roggeramos@facebook.com
+
+# Threshold Entities can comply by sponsoring at or above this tier
+# See https://archa.license for details
