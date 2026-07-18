@@ -1,0 +1,107 @@
+# ============================================
+# Archa-1.0 -.gitignore
+# Baguio City 2026 | Privacy Protection
+# Powered By Archa License Bot v1.0
+# Website: https://newssungoldentoday-dev.github.io/archalics/
+# ============================================
+
+# --- Privacy - MOST IMPORTANT ---
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.secret
+*.private
+secrets/
+private/
+tokens/
+bot_token.txt
+api_key.txt
+
+# Private folders in your project
+Config/private/
+Settings/private/
+License-Code/private/
+License-Code/secrets/
+Settings/secrets/
+Config/secrets/
+
+# --- Go ---
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+bin/
+vendor/
+go.sum.bak
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# --- Ruby ---
+*.gem
+*.rbc
+/.config
+/coverage/
+/pkg/
+spec/reports/
+tmp/
+.bundle/
+vendor/bundle
+
+# --- C / C++ ---
+*.o
+*.lo
+*.slo
+*.ko
+*.a
+*.la
+*.lai
+*.so
+*.dll
+*.exe
+*.out
+*.app
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.obj
+
+# --- Node.js ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnp/
+
+# --- IDE & OS ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.log
+logs/
+.DS_Store?
+._*
+
+# --- Docker - don't ignore Dockerfile itself ---
+# Keep Dockerfile and.dockerignore public
+
+# --- Keep LICENSE public ---
+!LICENSE
+!LICENSE.md
