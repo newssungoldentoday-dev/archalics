@@ -14,4 +14,16 @@ Use our Bot to auto-check license in any repo:
 
 ```
 
-h
+Links:
+[!Archa License GitHub App] (https://github.com/apps/archa-license)
+
+[!Archa License Official Website]
+(https://newssungoldentoday-dev.github.io/archalics)
+
+[!Archa License Official Doc]
+(https://archalics-docs.readthedocs.io)
+
+[!Happy Anniversary! Form]
+(https://tally.so/r/9qgGO5)
+
+
