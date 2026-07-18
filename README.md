@@ -1,8 +1,13 @@
-# Archa License
+# 🛡️ Archa-1.0 — Built in Baguio City 2026
 
-[![License: Archa-1.0](https://img.shields.io/badge/License-Archa--1.0-C8AA6E.svg)](./LICENSE)
+[![Archa Bot](https://img.shields.io/badge/Archa%20Bot-v1.0.0-brightgreen?style=for-the-badge&logo=github)](https://github.com/newssungoldentoday-dev/archalics-bot/releases/tag/v1)
+[![License: Archa-1.0](https://img.shields.io/badge/License-Archa--1.0-blue.svg?style=for-the-badge)](./LICENSE)
 
-An open license built for sustainable software.
-Free for builders. Fair for business.
+**The Fair License.** Free for open source, small teams (<50), and < $1M revenue. Big corp pays.
 
-**Full text:** [LICENSE](./LICENSE)
+### 🤖 Official Bot - LIVE!
+
+Use our Bot to auto-check license in any repo:
+
+```yaml
+- uses: newssungoldentoday-dev/archalics-bot@v1
