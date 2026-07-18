@@ -1,0 +1,12 @@
+name: Archa License Check
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Archa-1.0 Bot
+        uses: newssungoldentoday-dev/archalics-bot@v1
