@@ -12,5 +12,6 @@ Use our Bot to auto-check license in any repo:
 ```yaml
 - uses: newssungoldentoday-dev/archalics-bot@v1
 
+```
 
-k
+h
